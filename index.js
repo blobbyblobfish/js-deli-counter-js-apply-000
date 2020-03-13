@@ -8,11 +8,15 @@ And don't go being too programmer-y and give them their index.
 These are normal people. If they are 7th in line, tell them that.
 Don't get their hopes up by telling them they are number 6 in line.*/
 
-function takeANumber (line, customer) {
-  line.push(customer);
-  return ("Welcome, " + customer + ". You are number " + line.length + " in line.");
-}
+var x = 0;
 
+function takeANumber () {
+  x++ 
+  return ("Order number " + x);
+}
+console.log (takeANumber());
+console.log (takeANumber());
+console.log (takeANumber());
 /*
 Build a function nowServing.
 This function should return the first person in line and then remove that individual from the line.
